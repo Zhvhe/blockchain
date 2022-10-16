@@ -26,7 +26,7 @@ from lib.sign    import sign_tx
 from lib.rpc     import RpcSocket
 
 ## Setup our RPC socket.
-rpc = RpcSocket({ 'wallet': 'regtest' })
+rpc = RpcSocket({ 'wallet': 'test2' })
 assert rpc.check()
 
 ## Get a utxo for Alice.

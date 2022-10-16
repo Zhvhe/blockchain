@@ -6,7 +6,7 @@ class RpcSocket:
     ''' Basic implementation of a JSON-RPC interface. '''
     def __init__(self, opt):
         url  = opt.get('url', '172.20.192.1')
-        port = opt.get('port', 18443)
+        port = opt.get('port', 18444)
 
         self.fullUrl  = f'http://{url}:{port}/'
         self.username = opt.get('username', 'bitcoin')

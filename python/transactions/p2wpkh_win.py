@@ -6,13 +6,13 @@ Example of a Pay-to-Witness-Pubkey-Hash (P2WPKH) transaction.
 
 import os, sys
 
-sys.path.append(os.path.dirname(__file__).split('/transactions')[0])
+sys.path.append(os.path.dirname(__file__).split('transactions')[0])
 
-from lib.encoder import encode_tx, encode_script
-from lib.hash    import hash256
-from lib.helper  import decode_address, hash_script, get_txid
-from lib.sign    import sign_tx
-from lib.rpc     import RpcSocket
+from lib.encoder  import encode_tx, encode_script
+from lib.hash     import hash256
+from lib.helper   import decode_address, hash_script, get_txid
+from lib.sign_win import sign_tx
+from lib.rpc      import RpcSocket
 
 ## Setup our RPC socket.
 rpc = RpcSocket({ 'wallet': 'test2' })
