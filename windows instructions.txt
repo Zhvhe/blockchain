@@ -1,0 +1,38 @@
+$pip3 install secp256k1Crypto
+
+$compare-object (get-content .\lib\sign.py) (get-content .\lib\sign_win.py)
+
+InputObject                            SideIndicator
+-----------                            -------------
+from secp256k1Crypto import PrivateKey =>
+from secp256k1 import PrivateKey       <=
+
+
+$compare-object (get-content .\transactions\ballgame.py) (get-content .\transactions\ballgame_win.py)
+
+InputObject                                                          SideIndicator
+-----------                                                          -------------
+sys.path.append(os.path.dirname(__file__).split('transactions')[0])  =>
+from lib.sign_win import sign_tx                                     =>
+sys.path.append(os.path.dirname(__file__).split('/transactions')[0]) <=
+from lib.sign     import sign_tx                                     <=
+
+
+
+$ python3 .\ballgame_win.py
+
+Locking Tx:
+{
+  "version": 1,
+  "vin": [
+    {
+      "txid": "c1006910b7023108e46b9808283db90aca0f37c0e29d9ad4719585a35232a501",
+      "vout": 0,
+      "script_sig": [],
+      "sequence": 4294967295,
+      "witness": [
+        "304402204bc1b305e409e9eec6bebd31fbbdffc1fc14f8211e01bfeb790c212f2023c7a40220227a6dbb662daa33de1e4881f34b5fcb3f214ce3a2f28726bb0222d4d9c3c1bc01",
+        "03d30c3f0adf62d93c30fe841491e434759018030e30b97e2f9aef4daeebf88063"
+      ]
+    },
+..... etc....
