@@ -5,7 +5,7 @@ from .helper import decode_address
 class RpcSocket:
     ''' Basic implementation of a JSON-RPC interface. '''
     def __init__(self, opt):
-        url  = opt.get('url', '172.20.192.1')
+        url  = opt.get('url', '127.0.0.1')
         port = opt.get('port', 18444)
 
         self.fullUrl  = f'http://{url}:{port}/'
@@ -128,3 +128,6 @@ class RpcSocket:
             'pubkey_hash': pubkey_hash,
             'redeem_script': f'1976a914{pubkey_hash}88ac',
         }
+        
+    def transact(self, transaction):
+        return self.call('sendrawtransaction', transaction)
