@@ -1,0 +1,42 @@
+# Assignment 02 - Bitcoin Script
+
+Name    : Olivia Mitchell  
+Email   : zhvhem@gmail.com  
+Discord : 乱汉字#7110  
+
+## Program Inputs
+
+any two numbers should evaluated to true
+(except the one set of inputs I forgot to write down somewhere....)
+
+## Program Script
+
+The script goes through the following operations:
+
+```python
+OP_1SUB
+OP_NEGATE
+OP_OVER
+OP_OVER
+OP_GREATERTHANOREQUAL
+OP_IF
+OP_ADD
+OP_SHA1
+<0xda39a3ee5e6b4b0d3255bfef95601890afd80709>
+OP_ELSE
+OP_SUB
+OP_SHA256
+<0xe3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855>
+OP_ENDIF
+OP_EQUAL
+OP_1ADD
+```
+
+## Result
+
+The result should evaluate to 1.
+
+## Resources
+
+**Script Wiz IDE**  
+https://ide.scriptwiz.app

@@ -1,0 +1,8 @@
+---------------BEGIN LND CIPHER SEED---------------
+ 1. abandon   2. decade    3. close     4. ready
+ 5. blame     6. width     7. lady      8. era
+ 9. palm     10. endless  11. aunt     12. wrong
+13. notice   14. alarm    15. divorce  16. code
+17. snack    18. unfair   19. wheel    20. planet
+21. surge    22. fame     23. rocket   24. pattern
+---------------END LND CIPHER SEED-----------------

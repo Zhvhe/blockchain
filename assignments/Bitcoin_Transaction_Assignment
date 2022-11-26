@@ -1,0 +1,26 @@
+# Assignment 01 - Bitcoin Transaction
+
+Name    : Olivia Mitchell  
+Email   : zhvhem@gmail.com  
+Discord : 乱汉字#7110  
+
+## Transaction Sumamry
+
+**Funding Transaction**  
+txid: 085c98047e7abe778c39dde19d54bc11ebe98a9717e663a23bcd63a16a50fdd7  
+link: [mempool.space](https://mempool.space/testnet/tx/085c98047e7abe778c39dde19d54bc11ebe98a9717e663a23bcd63a16a50fdd7)
+
+**Redeem Transaction**  
+txid: cc3f42167a6c7ba24151ba3031a826a38cf601a6450285db03b1b7274b22e618  
+link: [mempool.space](https://mempool.space/testnet/tx/cc3f42167a6c7ba24151ba3031a826a38cf601a6450285db03b1b7274b22e618)
+
+## Transaction Details
+
+> *What type of transaction did you make?*  
+Pay to Witness Pubkey Hash.
+
+> *What software did you use to make the transaction?*  
+bitcoin-cli, bitcoin-qt, rpc server
+
+> *Where did you broadcast the transaction?*  
+Bitcoin testnet network.
