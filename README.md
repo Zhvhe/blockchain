@@ -1,2 +1,2 @@
 # blockchain
-repo for blockchain class
+repo for blockchain class for Olivia Mitchell (ozm59)
